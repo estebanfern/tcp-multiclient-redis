@@ -1,0 +1,10 @@
+services:
+  redis:
+    image: redis:7.4.0-bookworm
+    container_name: redis-multiserver
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_PASSWORD=sistemasdistribuidos2024
+      - REDIS_PORT=6379
+      - REDIS_DATABASES=16
